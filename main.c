@@ -18,7 +18,7 @@ int main()
 {
   int Length = 12;
   char password[Length + 1];
-  unsigned int seed;
+  unsigned long long seed;
 
   printf("Enter a random number: \n");
   scanf("%d", &seed);
