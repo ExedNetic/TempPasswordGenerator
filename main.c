@@ -22,7 +22,7 @@ int main()
   unsigned long long seed;
 
   printf("Enter a random number: \n");
-  scanf("%d", &seed);
+  scanf("%lld", &seed);
 
   GenTempPassword(password, seed, Length);
 
