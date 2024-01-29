@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void GenTempPassword(char *TempPassword, unsigned int seed, int legth)
 {
   char characters[] = "!#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ^_`abcdefghijklmnopqrstuvwxyz|~";
   int charactersLegth = sizeof(characters) - 1;
-  srand(seed);
+  srand(seed * time(NULL));
   for (int c = 0; c < legth; c++)
   {
     int random = rand() % charactersLegth;
