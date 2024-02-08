@@ -20,7 +20,7 @@ int main()
   int Length;
 
   printf("Enter Length of password: \n");
-  scanf("%d", &Lenght);
+  scanf("%d", &Length);
   
   char password[Length + 1];
   unsigned long long seed;
