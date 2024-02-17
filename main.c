@@ -17,10 +17,10 @@ void GenTempPassword(char *TempPassword, unsigned int seed, int legth)
 
 int main()
 {
-  int Length;
+  unsigned long long Length;
 
   printf("Enter Length of password: \n");
-  scanf("%d", &Length);
+  scanf("%lld", &Length);
   
   char password[Length + 1];
   unsigned long long seed;
