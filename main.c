@@ -17,7 +17,7 @@ void GenTempPassword(char *TempPassword, unsigned int seed, int legth)
 
 void remember(char password[]) {
   FILE *file = fopen("password.txt", "a");
-
+  fputs("\n", file);
   fputs(password, file);
 }
 
