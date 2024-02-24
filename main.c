@@ -15,6 +15,13 @@ void GenTempPassword(char *TempPassword, unsigned int seed, int legth)
   TempPassword[legth] = '\0';
 }
 
+void remember(char password[]) {
+  FILE *file = fopen("password.txt", "a");
+
+  fputs(password, file);
+}
+
+
 int main()
 {
   unsigned long long Length;
@@ -30,5 +37,10 @@ int main()
 
   GenTempPassword(password, seed, Length);
 
-  printf("Your password is: %s\n", password);
+  printf("Your password is: %s\nyou want to save the password in password.txt\n1 True/2 False: ", password);
+  scanf("%d", &save);
+  if (save == true)
+  {
+    remember(password);
+  }
 }
