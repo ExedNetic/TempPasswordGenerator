@@ -24,6 +24,7 @@ void remember(char password[]) {
 
 int main()
 {
+  bool save;
   unsigned long long Length;
 
   printf("Enter Length of password: \n");
