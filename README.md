@@ -1,0 +1,1 @@
+The passwords generated for now are not secure, with megacomputers and/or time they can regenerate them all, I think of adding many more random numbers entered by the user and new ways to randomize, wait for 1.0.5
